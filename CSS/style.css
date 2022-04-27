@@ -1,0 +1,1146 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+
+:root{
+    --main-color:#aa9d5b;
+    --black:#13131a;
+    --bg:#13131a;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+
+*{
+    font-family: 'Dosis';
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+/* Html queries Starts */
+html{
+    font-size: 50%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .4rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+/* Html queries Ends */
+
+body{
+    background: var(--bg);
+}
+
+section{
+    padding:2rem 7%;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+.heading{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color:var(--main-color);
+    text-transform: uppercase;
+}
+
+/* Header Section Starts */
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1rem 6%;
+    border-bottom: var(--border);
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.header .logo img{
+    height: 6rem;
+}
+
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1.8rem;
+    color:#fff;
+}
+
+.header .navbar a:hover{
+    color:var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.header .icons div{
+    color:#fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header .icons div:hover{
+    color:var(--main-color);
+}
+
+#menu-btn{
+    display: inline-block;
+}
+
+.header .search-form{
+    position: absolute;
+    top:110%; right: 3%;
+    background: #fff;
+    width: 30rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+    border-radius: 3px;
+    border: 2px solid #d3ad7f;
+}
+
+.header .search-form.active{
+    transform: scaleY(1);
+}
+
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color:var(--black);
+    padding:1rem;
+    text-transform: none;
+}
+
+.header .search-form label{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color:var(--black);
+}
+
+.header .search-form label:hover{
+    color:var(--main-color);
+}
+
+.header .cart-items-container{
+    position: absolute;
+    top:100%; right: -100%;
+    height: calc(100vh - 9.5rem);
+    width: 35rem;
+    background: #fff;
+    
+padding:0 1.5rem;
+}
+
+.header .cart-items-container.active{
+    right: 0;
+}
+
+.header .cart-items-container .cart-item{
+    position: relative;
+    margin:2rem 0;
+    display: flex;
+    align-items: center;
+    gap:1.5rem;
+}
+
+.header .cart-items-container .cart-item .fa-times{
+    position: absolute;
+    top:1rem; right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--black);
+}
+
+.header .cart-items-container .cart-item .fa-times:hover{
+    color:var(--main-color);
+}
+
+.header .cart-items-container .cart-item img{
+    height: 7rem;
+}
+
+.header .cart-items-container .cart-item .content h3{
+    font-size: 2rem;
+    color:var(--black);
+    padding-bottom: .5rem;
+}
+
+.header .cart-items-container .cart-item .content .price{
+    font-size: 1.5rem;
+    color:var(--main-color);
+}
+
+.header .cart-items-container .btn{
+    width: 100%;
+    text-align: center;
+    
+}
+
+.header .cart-items-container p{
+    font-size: 18px;
+    margin-top: 16.5em;
+    
+}
+/* Header Section Ends */
+
+/* Home Section Starts */
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url(/images/maguire.whiskey_main_img_1.jpg) no-repeat;
+    background-size: cover;
+    background-position: left;
+    justify-content: center;
+    text-align: center;
+}
+
+.home .content{
+    max-width: 40rem;
+}
+
+.home .content h3{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color:#fff;
+}
+
+.home .content p{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    line-height: 1.5;
+    padding:1rem 0;
+    color:#eee;
+    
+}
+
+.home-section2{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url(/images/maguire.whiskey_main_img_2.jpg) no-repeat;
+    background-size: cover;
+    background-position: left;
+    justify-content: center;
+    text-align: center;
+}
+
+.home-section2 .content{
+    max-width: 23rem;
+}
+
+.home-section2 .content h3{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color:#fff;
+}
+
+.home-section2 .content p{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    line-height: 1.5;
+    padding:1rem 0;
+    color:#eee;
+}
+
+.home-section3{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url(/images/maguire.whiskey_main_img_3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.home-section3 .content{
+    max-width: 40rem;
+}
+
+.home-section3 .content h3{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color:#fff;
+}
+
+.home-section3 .content p{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    line-height: 1.5;
+    padding:1rem 0;
+    color:#eee;
+}
+
+.home .newsletterbtn{
+    position:fixed;
+    right: 15px;
+    top: 85px;
+    padding: 7px 7px;
+    background: var(--main-color);
+    font-size: 8px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.home .newsletterbtn:hover{
+    letter-spacing: 4px;
+    color: #13131a;
+}
+
+.home #popup{
+    position: fixed;
+    top:-50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: #9b2c2a;
+    width: 350px;
+    height: 370px;
+    padding: 80px, 50px, 50px;
+    border-radius: 4px;
+    border: 2px solid;
+    transition: 0.5s; 
+    visibility: hidden;
+}
+
+.home #popup.active{
+    visibility: visible;
+    top:50%;
+}
+
+.home #popup .newsletterbtn .content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home #popup .content img{
+    max-width: 100px;
+    padding-top: 2.5em;
+    padding-bottom: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.home #popup .content h2{
+    font-size: 25px;
+    font-style: oblique;
+    font-weight: bolder;
+    text-align: center;
+    color: #fff;
+}
+
+.home #popup .content p{
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    font-style: oblique;
+}
+
+.home #popup .content .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home #popup .content .inputBox input{
+    width: 50%;
+    border: 1.5px solid;
+    border-color: #13131a;
+    border-radius: 2px;
+    padding: 5px;
+    font-size: 15px;   
+}
+
+.home .filter-condition select{
+    width: 50%;
+    padding: 2px;
+    font-weight: bold;
+    background: #fff;
+    border-radius: 2px;
+    border: 1.5px solid #13131a;
+    color: #88888a;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.home #popup .content .inputBox input[type="submit"]{
+    max-width: 100px;
+}
+
+.home .inputBox .btn{
+    margin-top: .1px;
+
+}
+
+.home #popup .close{
+    position: absolute;
+    top: -1em;
+    right: 0.5em;
+    max-width: 100%;
+    width: 7%;
+    cursor: pointer;
+}
+/* Home Section Ends */
+
+/* Our Story Section Starts */
+.ourstory{
+    padding-top: 10em;
+}
+
+.ourstory .row{
+    display: flex;
+    align-items: center;
+    background:var(--black);
+    flex-wrap: wrap;
+}
+
+.ourstory .row .image{
+    flex:1 1 45rem;
+}
+
+.ourstory .row .image img{
+    width: 100%;
+}
+.ourstory .row .content{
+    flex:1 1 45rem;
+    padding-top:1rem;
+    padding-bottom:4rem;
+}
+
+.ourstory .row .content h3{
+    font-size: 3rem;
+    color:#fff;
+}
+
+.ourstory .row .content p{
+    font-size: 1.5rem;
+    color:#ccc;
+    padding:1rem 0;
+    line-height: 1.5;
+}
+/* Our Story Section Ends */
+
+/* Whiskeys Section Start */
+.whiskeys{
+    padding-top: 15px;
+}
+
+.whiskeys-header{
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    background:url(/images/maguire.whiskey_products_header_img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.whiskeys-header .content{
+    max-width: 50rem;
+}
+
+.whiskeys-header .content h3{
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    color:#fff;
+    margin-top: 1.3em;
+    text-align: center;
+    justify-content: center;
+}
+
+.whiskeys-header p{
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.5;
+    padding:1rem 0;
+    color:#eee;
+}
+
+.whiskeys .filter-condition{
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.whiskeys .filter-condition select{
+    width: 100px;
+    padding: 0 0 0 10px;
+    font-weight: bold;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.whiskeys .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 70fr));
+    gap:1.5rem;
+}
+
+.whiskeys .box-container .box{
+    text-align: center;
+    border:var(--border);
+    padding: 2rem;
+}
+
+.whiskeys .box-container .box .image{
+    padding: 2.5rem 0;
+}
+
+.whiskeys .box-container .box .image img{
+    height: 25rem;
+}
+
+.whiskeys .box-container .box .content h3{
+    color:#fff;
+    font-size: 2.5rem;
+}
+
+.whiskeys .box-container .box .content .price{
+    color:#fff;
+    font-size: 2rem;
+}
+
+.whiskeys .box-container .box .content .price span{
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+/* Whiskeys Section Ends */
+
+/* Cocktails Section Start */
+.cocktails{
+    background-color:transparent;
+    padding-top: 2em;
+}
+
+.cocktails-header{
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    background:url(/images/maguire.whiskey_cocktails_header_img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.cocktails-header .content{
+    max-width: 50rem;
+}
+
+.cocktails-header .content h3{
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    color:#fff;
+    margin-top: 1.3em;
+    text-align: center;
+    justify-content: center;
+}
+
+.cocktails-header p{
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.5;
+    padding:1rem 0;
+    color:#eee;
+}
+
+/*
+.cocktails .card{
+    background-color: #d3ad7f;
+    border-radius: 5px;
+    adding: .5em;
+    text-align: center;
+}
+*/
+
+.cocktails-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 70fr));
+    grid-column-gap: 2em;
+    grid-row-gap: 2rem;
+}
+
+.cocktails-container .txtover{ 
+    position:relative 
+} 
+
+.cocktails-container .txtover figcaption{ 
+    position:absolute; 
+    bottom:0; 
+    left:0; 
+    font-size: 30px;
+    font-weight: bold;
+    padding: 8px;
+    color: #fff;
+}
+
+.card .title{
+    font-size: 20px;
+    padding-bottom: .5em;
+    font-weight: normal;
+}
+
+.card img{
+    max-width: 100%;
+    border-radius: 2px;
+    padding-bottom: .5em;
+    
+}
+
+.add-to-cart-btn{
+    background-color: #aa9d5b;
+    padding: .5em;
+    border-radius: 2px;
+    font-weight: bold;
+    width: 100%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.add-to-cart-btn:hover{
+    color: #13131a;
+}
+/* Cocktails Section Ends */
+
+/* Contact Us Section Starts */
+.contactus-info{
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    background:url(/images/maguire.whiskey_contactus_img_1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 6em;
+    padding-top: 4em;
+}
+
+.contactus-info .content h2{
+    font-size: 40px;
+    color: var(--black);
+    background-color: var(--main-color);
+    border-radius: 2px;
+    margin-bottom: 6px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    padding: 5px;
+    text-transform: capitalize;
+    border: 1px solid #010103;
+}
+
+.contactus-info .content{
+    max-width: 60rem;
+}
+
+.contactus-info .content .map{
+    height: 25em;
+    border-radius: 2px;
+}
+
+.contactus-info .content p{
+    padding: 5px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    font-size: 12px;
+    background-color: var(--main-color);
+    border-radius: 2px;
+    text-transform: uppercase;
+    color: var(--black);
+    text-align: center;
+    letter-spacing: 1px;
+    justify-content: center;
+    border: 1px solid #010103;
+    font-weight: bold;
+    
+}
+
+.contactus{
+    min-height: 80vh;
+    display: flex;
+    background:url(/images/maguire.whiskey_contactus_img_2.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 1.5em;
+}
+
+.contactus .row{
+    position: absolute;
+    
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 340px;
+    background: #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: 100px 100px 100px;
+    display: block;
+    box-sizing:border-box;
+    width: 100%;
+    outline: none;
+    margin-top: 31em;  
+}
+
+.contactus .row h2{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(-black)
+}
+
+.contactus .row .input_field{
+    margin-bottom: 6px;
+}
+
+.contactus .row .input_field input[type="text"],
+.contactus .row textarea{
+    width: 100%;
+    border:1px solid #d3ad7f;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.contactus .row textarea{
+    height: 100px;
+    resize: none;
+}
+
+.contactus .filter-condition select{
+    width: 100%;
+    padding: 5px;
+    font-weight: bold;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #d3ad7f;
+    color: #88888a;
+    cursor: pointer;
+}
+
+.contactus .row .btn{
+    width: 100%;
+    padding: 5px;
+    margin-top: .4em; 
+}
+
+.contactus .row .btn input[type="submit"]{
+    border: 0;
+    margin-top: 0px;
+    padding: 0;
+    width: 100%;
+    color: var(--black);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.contactus .row #error_message{
+    margin-bottom: 20px;
+    padding: 0px;
+    background-color: #fe8b8e;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5 ease;
+}
+/* Contact Section Ends */
+
+/* Comming Sonn Section Starts*/
+.commingsoon{
+    min-height: 100vh;
+    display: flex;
+    background:url(/images/maguire.whiskey_commingsoon_img.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 10em;
+}
+
+.commingsoon .container{
+    position: relative;
+    align-items: center;
+    width: 600px;
+    height: 580px;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 5px;
+    background-color: #9b2c2a;
+    
+}
+
+.commingsoon .container .title{
+    color: #fff;
+    font-size: 36px;
+    font-style: italic ;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    padding-top: 1px;
+    letter-spacing: 3px;
+}
+
+.commingsoon .container .input-box-wrapper{
+    position: relative;
+    border-radius: 5px;
+    background-color: #9b2c2a; 
+}
+
+.commingsoon .input-box-wrapper .box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #aa9d5b;
+    border-bottom: 0;
+    padding: 14px 14px; 
+}
+
+.commingsoon .input-box-wrapper .box:first-child{
+    border-radius: 2px 2px 0 0;
+}
+
+.commingsoon .input-box-wrapper .box:last-child{
+    border-radius: 0 0 2px 2px;
+    border-bottom: 1px solid #aa9d5b;
+}
+
+.commingsoon .input-box-wrapper .box label{
+    color: #fff;
+    font-size: 14px;
+    font-weight:600;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-left: 10px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+
+}
+
+.commingsoon .input-box-wrapper .box .checkbox{
+    position: relative;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    
+}
+
+.commingsoon .print-value{
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.commingsoon .print-value p{
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.commingsoon .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.commingsoon .inputBox input{
+    width: 100%;
+    border: 1.5px solid;
+    border-color: #aa9d5b;
+    background-color: #aa9d5b;
+    border-radius: 2px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.commingsoon .inputBox .btn{
+    margin-top: .1px;
+    
+}
+
+.commingsoon .emailPopupMessageTag{
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 700;
+}
+/* Comming Sonn Section Ends */
+
+/* Footer Section Starts */
+.footer{
+    background:var(--black);
+    text-align: center;
+    padding-top: 5em;
+    padding-bottom: 2em;
+}
+
+.footer .share{
+    padding:rem 0;
+}
+
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color:#fff;
+}
+
+.footer .share a:hover{
+    background-color: var(--main-color);
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: .5rem;
+    gap: 10px;
+}
+
+.footer .links a{
+    padding:1rem 1rem;
+    color:#fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.footer .links a:hover{
+    color: var(--main-color);
+}
+
+.footer .credit{
+    font-size: 1.5rem;
+    color:#fff;
+    font-weight: lighter;
+    padding: 2rem;
+}
+
+.footer .credit span{
+    color:var(--main-color);
+}
+/* Footer Section Ends */
+
+/* Scroll To Top Section Starts */
+.scroll-to-top{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    opacity: 60%;
+    font-size: 15px;
+    color: #010103;
+}
+/* Scroll To Top Section Ends */
+
+/* media queries Starts */
+@media (min-width:700px){
+
+    #menu-btn{
+        display: none;
+    }
+    
+    html{
+        font-size: 60%;
+    }
+
+    .header{
+        padding: 1.5rem 1.5rem;
+    }
+
+    .header .search-form{
+        width: 60%;
+        right: 5rem;
+    }
+
+    section{
+        padding:9rem;
+    }
+
+    .content p{
+        display: center;
+    }
+
+    .home{
+        justify-content: left;
+        text-align: left;
+        min-height: 100vh;
+        display: flex;
+        align-items: left;
+        background-size: cover;
+    }
+
+    .home-section2{
+        justify-content: right;
+        text-align: right;
+        min-height: 100vh;
+        display: flex;
+        align-items: right;
+        background-size: cover;
+        background-position: right;
+       
+    }
+
+    .home-section2 .content{
+        max-width: 30rem;
+        
+    }
+
+    .home-section2 .content h3{
+        font-size: 4.5rem;
+        padding-top: 10em;
+        
+    }
+
+    .home-section3{
+        justify-content: center;
+        text-align: center;
+        min-height: 100vh;
+        display: flex;
+        align-items: left;
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 40em;
+    }
+
+    .home-section3 .content h3{
+        font-size: 4.5rem;
+    }
+
+    .home .newsletterbtn{
+        position:fixed;
+        right: 20px;
+        top: 12em;
+        font-size: 10px;
+        padding: 13px 13px;
+    }
+
+    .home .filter-condition select{
+        left: 25%;
+    }
+
+    .ourstory .row .content{
+        padding-left: 5em;
+    }
+
+    .ourstory .row .image{
+        padding-bottom: 1em;
+    }
+
+    .contactus .row{
+        margin-top: 23em;
+    }
+
+    .commingsoon{
+        padding-top: 13em;
+    }
+
+    .scroll-to-top{
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width:700px){
+
+    
+    .header .navbar{
+        position: absolute;
+        top:100%; right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active{
+        right:0;
+    }
+
+    .header .navbar a{
+        color:var(--black);
+        display: block;
+        margin:1.5rem;
+        padding:1.5rem;
+        font-size: 2rem;
+    }
+
+}
+/* media queries Ends */
+
+
+
+

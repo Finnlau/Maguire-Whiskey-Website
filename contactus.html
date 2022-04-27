@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Maguire Whiskey</title>
+    <link rel="icon" type="image/x-icon" href="/images/maguire.whiskey_ favicon.png">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+<header class="header">
+
+    <a href="index.html" class="logo">
+        <img src="images/Maguire_whiskey_ logo_web-01.png" alt="">
+    </a>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="ourstory.html">Our Story</a>
+        <a href="Whiskeys.html">Whiskeys</a>
+        <a href="cocktails.html">Cocktails</a>
+        <a href="contactus.html">Contact Us</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+
+    <div class="cart-items-container">
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/maguire.whiskey_products_2.png" alt="">
+            <div class="content">
+                <h3>Maguire Honey</h3>
+                <div class="price">$59/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/maguire.whiskey_products_5.png" alt="">
+            <div class="content">
+                <h3>Magurie Apple</h3>
+                <div class="price">$49/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/maguire.whiskey_cocktails_12.jpg" alt="">
+            <div class="content">
+                <h3>The Cloudy Apple</h3>
+                <div class="price">$21/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/maguire.whiskey_cocktails_18.jpg" alt="">
+            <div class="content">
+                <h3>Late Riser</h3>
+                <div class="price">$24/-</div>
+            </div>
+        </div>
+        <p>TOTAL: $ 138/-</p>
+        <a href="#" class="btn">checkout now</a>
+    </div>
+
+</header>
+<!-- header section ends -->
+
+<!-- contact us section starts  -->
+<section class="contactus-info" id="contactus-info">
+    <div class="content">
+        <h2>FIND US HERE</h2>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19062.42962920649!2d-6.248075975279908!3d53.328867912120764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670ec1077b3405%3A0x1c1b6f4f4772ee4c!2sBallsbridge%2C%20Dublin!5e0!3m2!1sen!2sie!4v1639574979608!5m2!1sen!2sie" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p> Phone: 01 9362888 </p>
+        <p>email: contact.maguire.whiskey@mw.ie</p>
+        <p>Address: 8 Clyde Lane, Ballbridge, Dublin 4</p>
+    </div>
+</section>
+
+<section class="contactus" id="contactus">
+    
+    <div class="row">
+        <h2>contact us</h2>
+        <div id="error_message"></div>
+
+        <form id="myform" onsubmit="return validation()">
+            <div class="input_field">
+                <input type="text" placeholder="Name" id="name"> 
+            </div>
+
+            <div class="input_field">
+                <input type="text" placeholder="Subject" id="subject">
+            </div>
+
+            <div class="input_field">
+                <input type="text" placeholder="Phone" id="phone">
+            </div>
+
+            <div class="input_field">
+                <input type="text" placeholder="Email" id="email">
+            </div>
+
+            <div class="input_field">
+                <textarea id="message" placeholder="Message" ></textarea>
+            </div>
+
+            <div class="filter-condition">
+                <select id="" name="">
+                    <option value="Country">Country</option>
+                    <option value="Austria">Austria</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Belgium">Belgium</option>
+                    <option value="Canada">Canada</option>
+                    <option value="China">China</option>
+                    <option value="Denmark">Denmark</option>
+                    <option value="Finland">Finland</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Irealnd">Ireland</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Monaco">Monaco</option>
+                    <option value="Netherland">Argentina</option>
+                    <option value="Norway">Norway</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="United States">United States</option>
+                </select>
+            </div>
+
+            <div class="btn">
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+</section>
+<!-- contact us section ends -->
+
+<!-- footer section starts  -->
+<section class="footer">
+
+    <div class="share">
+        <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+        <a href="https://twitter.com/" class="fab fa-twitter"></a>
+        <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+        <a href="https://ie.linkedin.com/" class="fab fa-linkedin"></a>
+        <a href="https://www.pinterest.ie/" class="fab fa-pinterest"></a>
+    </div>
+
+    <div class="links">
+        <a href="commingsoon.html">Term and Conditions</a>
+        <a href="commingsoon.html">Privacy Policy</a>
+        <a href="commingsoon.html">Nutrition Information</a>
+        <a href="commingsoon.html">Career</a>
+        <a href="commingsoon.html">Cookie Policy</a>
+        <a href="commingsoon.html">Contact Us</a>
+        <a href="commingsoon.html">FAQ</a>
+    </div>
+
+    <div class="credit"> All Rights Reserve To <span> Maguire Whiskey International Limited </span></div>
+
+</section>
+<!-- footer section ends -->
+
+<!-- scroll to top starts-->
+<section class="scroll-to-top">
+    <button class="scroll-to-top"><i class="fas fa-arrow-up"></i></button>
+</section>
+<!-- scroll to top ends-->
+
+<!-- custom js file link  -->
+<script src="JS/script.js"></script>
+
+</body>
+</html>
